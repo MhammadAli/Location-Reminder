@@ -102,7 +102,7 @@ class RemindersListViewModelTest {
     }
 
     @Test
-    fun shouldReturn_TestException() = mainCoroutinesRule.runBlockingTest {
+    fun shouldReturn_ErrorRetrievingData() = mainCoroutinesRule.runBlockingTest {
         //When
         fakeDataSource.adjustReturnErrorOrNot(true)
         remindersListViewModel.loadReminders()
